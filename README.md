@@ -1,1 +1,9 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/mHa02F-Z)
+## Todos och estimat
+- [ ] Skriva HTML för navigation - 0,5 SP
+- [ ] Bygga navigation — 0.5 SP
+- [ ] Koda artiklar och innehåll — 1.5 SP
+- [ ] Bilder med alt + storlek — 0.5 SP
+- [ ] Formulär — 1 SP
+- [ ] Tillgänglighetsgranska koden — 1 SP
+- [ ] W3C-validering — 0.5 SP
+- [ ] Tidsrapport och sammanfattning — 0.5 SP
