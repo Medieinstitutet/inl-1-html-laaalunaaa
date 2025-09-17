@@ -3,21 +3,24 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tidningsnamn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-
-    <header>
+    <header class="header">
         <div class="header-box">
             <img src="bild.jpg" alt="Tidningsnamns logotyp" width="50" height="50" loading="lazy">
             <h1>Tidningsnamn</h1>
         </div>
-        <hr>
+
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-label="Öppna/stäng meny">
+            <span class="menu-text">Meny</span>
+            <span class="menu-icon">☰</span>
+        </button>
 
         <nav class="menu-box" aria-label="Huvudmeny">
-            <ul>
+            <ul class="menu-list">
                 <li><a href="#" target="_blank" rel="noopener noreferrer">Hem</a></li>
                 <li><a href="#" target="_blank" rel="noopener noreferrer">Senaste nytt</a></li>
                 <li><a href="#" target="_blank" rel="noopener noreferrer">Arkiv</a></li>
@@ -25,116 +28,110 @@
             </ul>
         </nav>
 
-        <button type="button" class="menu-toggle" aria-expanded="false" disabled>☰</button>
-
-        <div class="search-box"></div>
-        <form role="search" action="#" method="get"></form>
-        <label for="search-input">Sök</label>
-        <input type="search" name="q" placeholder="Sök...">
-        <button type="submit" disabled>🔍</button>
+        <form role="search" action="#" method="get" class="search-box">
+            <label for="search-input">Sök</label>
+            <input type="search" id="search-input" name="q" placeholder="Sök...">
+            <button type="submit">🔍</button>
         </form>
-        </div>
-        </div>
-        <hr>
     </header>
 
     <main>
-        <section class="articles">
-            <h2>Huvudartikelns titel</h2>
+        <div class="articles">
+            <article>
+                <h2>Huvudartikelns titel</h2>
 
-            <img src="https://placehold.co/1024x768" alt="Grå bild" width="1024" height="768" loading="lazy">
-            <p>Byline</p>
-            <p>Carrot cake muffin donut cotton candy sugar plum. Biscuit caramels chupa chups gummi bears fruitcake
-                marzipan chocolate. Tootsie roll cake bonbon bonbon sweet roll. Gummies chocolate bar pastry
-                tiramisu chocolate sesame snaps. Cupcake biscuit jelly marshmallow liquorice bear claw fruitcake.
-                Jelly donut gummies jelly beans bonbon. Ice cream cake croissant gummies candy canes icing pastry
-                pastry. Cookie ice cream chocolate bonbon cheesecake cookie sweet roll pudding carrot cake.
-                Chocolate bear claw caramels wafer sweet topping sweet.</p>
-            <blockqute>
-                <p>“Apple pie pie cupcake dessert lollipop icing toffee soufflé. Bonbon ice cream marshmallow sesame
-                    snaps chupa chups lemon drops."</p>
-                <blockqute>
-                    <button type="button" disabled>Läs mer</button>
-                    </article>
-                    <hr>
+                <img src="https://placehold.co/1024x768" alt="Grå bild" width="1024" height="768" loading="lazy">
+                <p>Byline</p>
+                <p>Carrot cake muffin donut cotton candy sugar plum. Biscuit caramels chupa chups gummi bears
+                    fruitcake
+                    marzipan chocolate. Tootsie roll cake bonbon bonbon sweet roll. Gummies chocolate bar pastry
+                    tiramisu chocolate sesame snaps. Cupcake biscuit jelly marshmallow liquorice bear claw
+                    fruitcake.
+                    Jelly donut gummies jelly beans bonbon. Ice cream cake croissant gummies candy canes icing
+                    pastry
+                    pastry. Cookie ice cream chocolate bonbon cheesecake cookie sweet roll pudding carrot cake.
+                    Chocolate bear claw caramels wafer sweet topping sweet.
+                </p>
+                <blockquote>
+                    “Apple pie pie cupcake dessert lollipop icing toffee soufflé. Bonbon ice cream marshmallow
+                    sesame
+                    snaps chupa chups lemon drops."
+                </blockquote>
+                <a href="#">Läs mer</a>
+            </article>
 
-                    <article>
-                        <h3>Andra artikelns titel</h3>
-                        <img src="https://placehold.co/1024x768" alt="Grå bild" width="1024" height="768"
-                            loading="lazy">
-                        <p>Byline</p>
-                        <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the
-                            tyranny
-                            of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak
-                            through the
-                            valley of darkness, for he is truly his brother's keeper and the finder of lost children.
-                            And I will
-                            strike down upon thee with great vengeance and furious anger those who would attempt to
-                            poison and
-                            destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon
-                            thee.
+            <article>
+                <h3>Andra artikelns titel</h3>
+                <img src="https://placehold.co/1024x768" alt="Grå bild" width="1024" height="768" loading="lazy">
+                <p>Byline</p>
+                <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the
+                    tyranny
+                    of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak
+                    through the
+                    valley of darkness, for he is truly his brother's keeper and the finder of lost children.
+                    And I will
+                    strike down upon thee with great vengeance and furious anger those who would attempt to
+                    poison and
+                    destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon
+                    thee.
 
-                            Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a
-                            comic.
-                        </p>
-                        <input type="button" value="Läs mer" disabled>
-                        </article>
-                        <hr>
+                    Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a
+                    comic.
+                </p>
+                <a href="#">Läs mer</a>
+            </article>
 
-                        <article>
-                            <h2>Tredje artikelns titel</h2>
-                            <img src="https://placehold.co/1024x768" alt="bild.jpg" width="1024" height="768"
-                                loading="lazy">
-                            <p>Byline</p>
-                            <p>Lorizzle ipsizzle phat shizzle my nizzle crocodizzle amizzle, yo mamma get down get down
-                                things.
-                                Nullam sapien velizzle, the bizzle shit, suscipit crackalackin, gravida cool, arcu.
-                                Pellentesque
-                                egizzle for sure. Sed erizzle.</p>
-                            <input type="button" value="Läs mer" disabled>
-                        </article>
-                        <hr>
-        </section>
+            <article>
+                <h2>Tredje artikelns titel</h2>
+                <img src="https://placehold.co/1024x768" alt="bild.jpg" width="1024" height="768" loading="lazy">
+                <p>Byline</p>
+                <p>Lorizzle ipsizzle phat shizzle my nizzle crocodizzle amizzle, yo mamma get down get down
+                    things.
+                    Nullam sapien velizzle, the bizzle shit, suscipit crackalackin, gravida cool, arcu.
+                    Pellentesque
+                    egizzle for sure. Sed erizzle.</p>
+                <a href="#">Läs mer</a>
+            </article>
+        </div>
 
         <aside>
-            <section aita-labelledby="tipsa-redaktionen"></section>
-            <h2>Tipsa redaktionen</h2>
-            <form action="#" method="post">
-                <label>
-                    <span>Ditt namn</span>
-                    <input type="text" placeholder="För- och efternamn">
-                </label>
+            <div class="tipsa-redaktionen">
+                <h2>Tipsa redaktionen</h2>
+                <form action="#" method="post">
+                    <label>
+                        <span>Ditt namn</span>
+                        <input type="text" placeholder="För- och efternamn">
+                    </label>
 
-                <label>
-                    <span>Din e-post</span>
-                    <input type="email" placeholder="me@example.com">
-                </label>
+                    <label>
+                        <span>Din e-post</span>
+                        <input type="email" placeholder="me@example.com">
+                    </label>
 
-                <label>
-                    <span>Ditt telefonnummer</span>
-                    <input type="tel" placeholder="+46701234567">
-                </label>
+                    <label>
+                        <span>Ditt telefonnummer</span>
+                        <input type="tel" placeholder="+46701234567">
+                    </label>
 
-                <label>
-                    <span>Meddelande</span>
-                    <textarea rows="4" placeholder="Skriv ditt meddelande här..."></textarea>
-                </label>
+                    <label>
+                        <span>Meddelande</span>
+                        <textarea rows="4" placeholder="Skriv ditt meddelande här..."></textarea>
+                    </label>
 
-                <label>
-                    <input type="checkbox" name="contact">
-                    Kontakta mig
-                </label>
+                    <label>
+                        <input type="checkbox" name="contact">
+                        Kontakta mig
+                    </label>
 
-                <details>
-                    <summary>GDPR och villkor</summary>
-                    <p>Genom att skicka detta formulär godkänner jag att mina uppgifter lagras enligt GDPR för att
-                        reaktionen ska kunna hantera mitt ärende.</p>
-                </details>
+                    <details>
+                        <summary>GDPR och villkor</summary>
+                        <p>Genom att skicka detta formulär godkänner jag att mina uppgifter lagras enligt GDPR för att
+                            reaktionen ska kunna hantera mitt ärende.</p>
+                    </details>
 
-                <input type="submit" value="Skicka" disabled>Skicka
-            </form>
-            </form>
-            </section>
+                    <input type="submit" value="Skicka">
+                </form>
+            </div>
         </aside>
     </main>
 
@@ -142,16 +139,15 @@
         <div class="footer-left">
             <h2>Företagsnamn</h2>
             <address>
-                <br>
-                <a href="tel:+46701234567">070 123 45 67</a><br>
+                <a href="tel:+46701234567">070 123 45 67</a>
                 <a href="mailto:infor@tidningsnamn.se">info@tidningsnamn.se</a>
-                </adress>
+            </address>
         </div>
 
         <div class="footer-center">
             <h2>Sitemap</h2>
             <ul>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Sitemap</a></li><br>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Sitemap</a></li>
                 <li><a href="#" target="_blank" rel="noopener noreferrer">Om oss</a></li>
             </ul>
         </div>
@@ -164,7 +160,6 @@
             </ul>
         </div>
     </footer>
-
 </body>
 
 </html>
